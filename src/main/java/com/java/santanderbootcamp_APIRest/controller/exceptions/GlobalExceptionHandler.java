@@ -20,7 +20,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(NoSuchElementException.class)
-    public ResponseEntity<String> handleNotFound(NoSuchElementException notFoundE){
+    public ResponseEntity<String> handleNotFound(){
         return new ResponseEntity<>("Resource ID not found", HttpStatus.NOT_FOUND);
     }
 
